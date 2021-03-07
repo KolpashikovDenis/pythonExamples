@@ -22,8 +22,6 @@ class MyApp:
     def get_age(self):
         return self.Age
 
-
-
 # -------- End ---------------
 
 if __name__ == "__main__":
