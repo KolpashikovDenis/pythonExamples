@@ -25,9 +25,13 @@ class MyApp:
 # -------- End ---------------
 
 if __name__ == "__main__":
-    m = MyApp(sys.argv[1], sys.argv[2], sys.argv[3])
-    m.out()
-    print(m.get_firstname())
-    print(m.get_lastname())
-    print(m.get_age())
-    print("Done.")
+    try:
+        m = MyApp(sys.argv[1], sys.argv[2], sys.argv[3])
+        m.out()
+        print(m.get_firstname())
+        print(m.get_lastname())
+        print(m.get_age())
+        print("Done.")
+    except IndexError:
+        print("Не достаточно аргументов командной строки:\n")
+        print("  ./app01.py <FirstName> <LastName> <Age>")
