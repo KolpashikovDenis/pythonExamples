@@ -32,3 +32,4 @@ if __name__ == "__main__":
     print(m.get_firstname())
     print(m.get_lastname())
     print(m.get_age())
+    print("Done.")
