@@ -11,7 +11,7 @@ class MyApp:
         self.Age = age
 
     def out(self):
-        print(f'{self.FirstName} {self.LastName} {self.Age}')
+        print(f'Имя: {self.FirstName}, фамилия: {self.LastName}, возраст: {self.Age}')
 
     def get_firstname(self):
         return self.FirstName
